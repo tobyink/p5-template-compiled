@@ -1,0 +1,17 @@
+# This file provides instructions for packaging.
+
+@prefix : <http://ontologi.es/doap-deps#>.
+
+`Template-Compiled`
+	:runtime-requirement    [ :on "perl 5.008"^^:CpanId ];
+	:runtime-requirement    [ :on "Moo 2.000000"^^:CpanId ];
+	:runtime-requirement    [ :on "namespace::autoclean"^^:CpanId ];
+	:runtime-requirement    [ :on "Types::Standard"^^:CpanId ];
+	:runtime-requirement    [ :on "Type::Params 1.002000"^^:CpanId ];
+	:runtime-requirement    [ :on "Exporter::Tiny"^^:CpanId ];
+	:runtime-requirement    [ :on "Eval::TypeTiny"^^:CpanId ];
+	:runtime-requirement    [ :on "HTML::Entities"^^:CpanId ];
+	:test-requirement       [ :on "Test::More 0.96"^^:CpanId ];
+	:test-requirement       [ :on "Test::Fatal"^^:CpanId ];
+	:develop-recommendation [ :on "Dist::Inkt 0.001"^^:CpanId ];
+	.

@@ -1,0 +1,19 @@
+# This file contains general metadata about the project.
+
+@prefix : <http://usefulinc.com/ns/doap#>.
+
+`Template-Compiled`
+	:programming-language "Perl" ;
+	:shortdesc            "templates which compile into coderefs";
+	:homepage             <https://metacpan.org/release/Template-Compiled>;
+	:download-page        <https://metacpan.org/release/Template-Compiled>;
+	:bug-database         <http://rt.cpan.org/Dist/Display.html?Queue=Template-Compiled>;
+#	:repository           [ a :GitRepository; :browse <https://github.com/tobyink/p5-template-compiled> ];
+	:created              2017-06-24;
+	:license              <http://dev.perl.org/licenses/>;
+	:maintainer           cpan:TOBYINK;
+	:developer            cpan:TOBYINK.
+
+<http://dev.perl.org/licenses/>
+	dc:title  "the same terms as the perl 5 programming language system itself".
+
