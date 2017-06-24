@@ -5,7 +5,7 @@ use warnings;
 package Template::Compiled;
 
 our $AUTHORITY = 'cpan:TOBYINK';
-our $VERSION   = '0.001';
+our $VERSION   = '0.002';
 
 use Eval::TypeTiny qw( eval_closure );
 use Types::Standard qw( -types slurpy Join );

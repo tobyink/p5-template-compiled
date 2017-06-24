@@ -4,3 +4,9 @@
 	issued  2017-06-24;
 	label   "Initial release".
 
+`Template-Compiled 0.002 cpan:TOBYINK`
+	issued  2017-06-24;
+	changeset [
+		item "Fix syntax error in fallback code for Perl older than 5.22."^^Bugfix;
+	].
+
