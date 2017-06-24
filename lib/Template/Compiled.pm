@@ -161,13 +161,13 @@ sub _build_code_and_env {
 			if ($type->is_a_type_of(HashRef)) {
 				push @code, PERL_NATIVE_ALIASES
 					? "\\my \%$name = \$$name;"
-					: "Data::Alias::alias( my \%$name = %{ \$$name } );";
+					: "Data::Alias::alias( my \%$name = \%{ \$$name } );";
 			}
 			
 			if ($type->is_a_type_of(ArrayRef)) {
 				push @code, PERL_NATIVE_ALIASES
 					? "\\my \@$name = \$$name;"
-					: "Data::Alias::alias( my \@$name = @{ \$$name } );";
+					: "Data::Alias::alias( my \@$name = \@{ \$$name } );";
 			}
 		}
 	}
@@ -225,7 +225,7 @@ sub _build_code_and_env {
 				substr($next, 1),
 			);
 		}
-		else {			
+		else {
 			my ($indent) = map /\A(\s*)/, grep /\S/, split /\n/, $next;
 			$code[-1] .= sprintf("\$INDENT = %s; %s;", perlstring($indent), $next);
 		}
