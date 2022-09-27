@@ -10,3 +10,8 @@
 		item "Fix syntax error in fallback code for Perl older than 5.22."^^Bugfix;
 	].
 
+`Template-Compiled 0.003 cpan:TOBYINK`
+	issued  2022-09-27;
+	changeset [
+		item "Use Type::Params v2, etc."^^Update;
+	].
